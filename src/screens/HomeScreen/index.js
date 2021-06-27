@@ -7,6 +7,7 @@ import {
   FlatList,
   Pressable,
   ToastAndroid,
+  StatusBar,
 } from 'react-native';
 import styles from './style';
 import data from '../../consts/data';
@@ -43,6 +44,11 @@ const Home = () => {
   };
   return (
     <View style={styles.container}>
+      <StatusBar
+        barStyle="light-content"
+        backgroundColor="black"
+        translucent={true}
+      />
       <View style={styles.header}>
         <Text style={styles.textHeader}>Lastest Feed</Text>
         <Pressable
@@ -50,7 +56,7 @@ const Home = () => {
           onPress={() => ToastAndroid.show('Add blog', ToastAndroid.SHORT)}>
           <Image
             source={require('../../../assets/icons/plus.png')}
-            style={{width: 30, height: 30}}
+            style={{width: 35, height: 35}}
           />
         </Pressable>
       </View>

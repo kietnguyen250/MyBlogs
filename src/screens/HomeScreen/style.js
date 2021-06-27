@@ -10,25 +10,36 @@ export default StyleSheet.create({
     padding: 8,
     backgroundColor: COLOR.white,
   },
+  shadow: {
+    shadowColor: '#7F5DF0',
+    shadowOffset: {
+      width: 0,
+      height: 10,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.5,
+    elevation: 5,
+  },
   header: {
     position: 'relative',
     width: width,
-    height: 40,
+    height: 50,
     flexDirection: 'row',
     padding: 5,
-    marginVertical: 8,
+    marginVertical: 16,
     alignItems: 'center',
   },
   textHeader: {
     position: 'absolute',
     left: 10,
-    fontSize: 20,
+    fontSize: 25,
     color: COLOR.black,
+    fontFamily: 'Oxygen-Regular',
   },
   imgAdd: {
     position: 'absolute',
-    width: 30,
-    height: 30,
+    width: 35,
+    height: 35,
     right: 25,
   },
   cardContainer: {
@@ -49,6 +60,7 @@ export default StyleSheet.create({
   },
   nameUser: {
     fontSize: 15,
+    fontFamily: 'Oxygen-Regular',
   },
   time: {
     color: COLOR.gray,
@@ -61,9 +73,10 @@ export default StyleSheet.create({
     right: 5,
   },
   cardTitle: {
-    fontSize: 17,
+    fontSize: 20,
     marginVertical: 8,
     marginHorizontal: 8,
+    fontFamily: 'Oxygen-Bold',
   },
   thumbnail: {
     width: width * 0.9,

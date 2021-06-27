@@ -8,6 +8,8 @@ const COLORS = {
   grey: '#bfbfbf',
   gray: '#666666',
   dark: '#000B10',
+  pinterest: '#C8232C',
+  Twitt: '#1DA1F2',
 };
 
 export default COLORS;

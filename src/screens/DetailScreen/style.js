@@ -7,6 +7,7 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: COLOR.white,
+    position: 'relative',
   },
   header: {
     width: width,
@@ -18,12 +19,12 @@ export default StyleSheet.create({
   },
   back: {
     position: 'absolute',
-    top: 16,
+    top: 40,
     left: 10,
   },
   save: {
     position: 'absolute',
-    top: 16,
+    top: 40,
     right: 10,
   },
   viewContent: {
@@ -36,9 +37,9 @@ export default StyleSheet.create({
   },
   title: {
     color: COLOR.black,
-    fontWeight: 'bold',
-    fontSize: 20,
+    fontSize: 22,
     marginVertical: 8,
+    fontFamily: 'Oxygen-Bold',
   },
   contentContainer: {
     width: width * 0.9,
@@ -65,7 +66,47 @@ export default StyleSheet.create({
     fontSize: 13,
   },
   content: {
-    fontSize: 17,
+    fontSize: 19,
     marginTop: 8,
+    fontFamily: 'Gruppo-Regular',
+  },
+  footer: {
+    width: width,
+    height: 55,
+    position: 'absolute',
+    bottom: 0,
+    flexDirection: 'row',
+  },
+  viewFB: {
+    height: '100%',
+    width: width / 4,
+    backgroundColor: COLOR.secondary,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginHorizontal: 0.2,
+  },
+  viewPint: {
+    height: '100%',
+    width: width / 4,
+    backgroundColor: COLOR.pinterest,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginHorizontal: 0.2,
+  },
+  viewTwit: {
+    height: '100%',
+    width: width / 4,
+    backgroundColor: COLOR.Twitt,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginHorizontal: 0.2,
+  },
+  viewInsta: {
+    height: '100%',
+    width: width / 4,
+    backgroundColor: COLOR.grey,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginHorizontal: 0.2,
   },
 });

@@ -1,15 +1,27 @@
 import React from 'react';
-import {View, Text, Pressable, Image, ToastAndroid} from 'react-native';
+import {
+  View,
+  Text,
+  Pressable,
+  Image,
+  ToastAndroid,
+  StatusBar,
+} from 'react-native';
 import styles from './style';
 import {useNavigation} from '@react-navigation/native';
 import {SafeAreaView} from 'react-native-safe-area-context';
-import style from './style';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const Detail = ({route}) => {
   const navigation = useNavigation();
   const {item: blog} = route.params;
   return (
     <View style={styles.container}>
+      <StatusBar
+        barStyle="light-content"
+        backgroundColor="#000B10"
+        translucent={true}
+      />
       <View style={styles.header}>
         <Pressable
           onPress={() => navigation.navigate('Tabs')}
@@ -46,6 +58,46 @@ const Detail = ({route}) => {
           <Text style={styles.content}>{blog.content}</Text>
         </View>
       </SafeAreaView>
+      <View style={styles.footer}>
+        <Pressable
+          onPress={() =>
+            ToastAndroid.show('Share Facebook', ToastAndroid.SHORT)
+          }
+          style={styles.viewFB}>
+          <Image
+            source={require('../../../assets/icons/facebook.png')}
+            style={{width: 50, height: 50}}
+          />
+        </Pressable>
+
+        <Pressable
+          onPress={() =>
+            ToastAndroid.show('Share Pinterest', ToastAndroid.SHORT)
+          }
+          style={styles.viewPint}>
+          <Image
+            source={require('../../../assets/icons/pinterest.png')}
+            style={{width: 40, height: 40}}
+          />
+        </Pressable>
+
+        <Pressable
+          onPress={() => ToastAndroid.show('Share Twitter', ToastAndroid.SHORT)}
+          style={styles.viewTwit}>
+          <Icon name="twitter" color={'white'} size={35} />
+        </Pressable>
+
+        <Pressable
+          onPress={() =>
+            ToastAndroid.show('Share Instagram', ToastAndroid.SHORT)
+          }
+          style={styles.viewInsta}>
+          <Image
+            source={require('../../../assets/icons/instagram.png')}
+            style={{width: 30, height: 30}}
+          />
+        </Pressable>
+      </View>
     </View>
   );
 };
