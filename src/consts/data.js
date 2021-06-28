@@ -6,7 +6,7 @@ const data = [
     title: 'A look into collaborative wireframing process',
     thumb: require('../../assets/car1.jpg'),
     content:
-      'Wireframing is a critical step in design—for you, for developers, for copywriters, and for anyone else who needs to understand your design. With all those people needing access, wouldn’t you want to work collaboratively from the get-go?',
+      'Wireframing is a critical step in design—for you, for developers, for copywriters, and for anyone else who needs to understand your design. With all those people needing access, wouldn’t you want to work collaboratively from the get-go? \n\n \tWireframing is a critical step in design—for you, for developers, for copywriters, and for anyone else who needs to understand your design. With all those people needing access, wouldn’t you want to work collaboratively from the get-go?',
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const data = [
     title: '20 Tools that will help you become a better freelancer',
     thumb: require('../../assets/img1.jpg'),
     content:
-      'Wireframing is a critical step in design—for you, for developers, for copywriters, and for anyone else who needs to understand your design. With all those people needing access, wouldn’t you want to work collaboratively from the get-go?',
+      '\tWireframing is a critical step in design—for you, for developers, for copywriters, and for anyone else who needs to understand your design. With all those people needing access, wouldn’t you want to work collaboratively from the get-go? \n\n \tWireframing is a critical step in design—for you, for developers, for copywriters, and for anyone else who needs to understand your design. With all those people needing access, wouldn’t you want to work collaboratively from the get-go?',
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const data = [
     title: '20 Tools that will help you become a better freelancer',
     thumb: require('../../assets/img2.jpg'),
     content:
-      'Wireframing is a critical step in design—for you, for developers, for copywriters, and for anyone else who needs to understand your design. With all those people needing access, wouldn’t you want to work collaboratively from the get-go?',
+      '\tWireframing is a critical step in design—for you, for developers, for copywriters, and for anyone else who needs to understand your design. With all those people needing access, wouldn’t you want to work collaboratively from the get-go? \n\n \tWireframing is a critical step in design—for you, for developers, for copywriters, and for anyone else who needs to understand your design. With all those people needing access, wouldn’t you want to work collaboratively from the get-go?',
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const data = [
     title: '20 Tools that will help you become a better freelancer',
     thumb: require('../../assets/img3.jpg'),
     content:
-      'Wireframing is a critical step in design—for you, for developers, for copywriters, and for anyone else who needs to understand your design. With all those people needing access, wouldn’t you want to work collaboratively from the get-go?',
+      '\tWireframing is a critical step in design—for you, for developers, for copywriters, and for anyone else who needs to understand your design. With all those people needing access, wouldn’t you want to work collaboratively from the get-go? \n\n \tWireframing is a critical step in design—for you, for developers, for copywriters, and for anyone else who needs to understand your design. With all those people needing access, wouldn’t you want to work collaboratively from the get-go?',
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ const data = [
     title: '20 Tools that will help you become a better freelancer',
     thumb: require('../../assets/img4.jpg'),
     content:
-      'Wireframing is a critical step in design—for you, for developers, for copywriters, and for anyone else who needs to understand your design. With all those people needing access, wouldn’t you want to work collaboratively from the get-go?',
+      '\tWireframing is a critical step in design—for you, for developers, for copywriters, and for anyone else who needs to understand your design. With all those people needing access, wouldn’t you want to work collaboratively from the get-go? \n\n \tWireframing is a critical step in design—for you, for developers, for copywriters, and for anyone else who needs to understand your design. With all those people needing access, wouldn’t you want to work collaboratively from the get-go?',
   },
 ];
 

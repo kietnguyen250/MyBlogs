@@ -73,7 +73,7 @@ const Tabs = () => {
             <View
               style={{alignItems: 'center', justifyContent: 'center', top: 2}}>
               <Image
-                source={require('../../assets/icons/saved.png')}
+                source={require('../../assets/icons/save.png')}
                 resizeMode="contain"
                 style={{
                   width: 25,

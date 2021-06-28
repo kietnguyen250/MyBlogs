@@ -20,16 +20,16 @@ export default StyleSheet.create({
   back: {
     position: 'absolute',
     top: 40,
-    left: 10,
+    left: 15,
   },
   save: {
     position: 'absolute',
     top: 40,
-    right: 10,
+    right: 15,
   },
   viewContent: {
     width: width,
-    height: height,
+    height: height * 0.83,
   },
   thumbnail: {
     width: width,
@@ -83,7 +83,7 @@ export default StyleSheet.create({
     backgroundColor: COLOR.secondary,
     justifyContent: 'center',
     alignItems: 'center',
-    marginHorizontal: 0.2,
+    marginHorizontal: 0.3,
   },
   viewPint: {
     height: '100%',
@@ -91,7 +91,7 @@ export default StyleSheet.create({
     backgroundColor: COLOR.pinterest,
     justifyContent: 'center',
     alignItems: 'center',
-    marginHorizontal: 0.2,
+    marginHorizontal: 0.3,
   },
   viewTwit: {
     height: '100%',
@@ -99,14 +99,14 @@ export default StyleSheet.create({
     backgroundColor: COLOR.Twitt,
     justifyContent: 'center',
     alignItems: 'center',
-    marginHorizontal: 0.2,
+    marginHorizontal: 0.3,
   },
-  viewInsta: {
+  viewLike: {
     height: '100%',
     width: width / 4,
-    backgroundColor: COLOR.grey,
+    backgroundColor: COLOR.like,
     justifyContent: 'center',
     alignItems: 'center',
-    marginHorizontal: 0.2,
+    marginHorizontal: 0.3,
   },
 });

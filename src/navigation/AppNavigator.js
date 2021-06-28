@@ -13,7 +13,7 @@ const Stack = createStackNavigator();
 const AppNavigator = () => {
   return (
     <Stack.Navigator
-      initialRouteName="Tabs"
+      initialRouteName="Plash"
       screenOptions={{
         headerTransparent: true,
         headerTitle: '',

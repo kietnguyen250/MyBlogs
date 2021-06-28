@@ -6,6 +6,7 @@ import {
   Image,
   ToastAndroid,
   StatusBar,
+  ScrollView,
 } from 'react-native';
 import styles from './style';
 import {useNavigation} from '@react-navigation/native';
@@ -28,7 +29,7 @@ const Detail = ({route}) => {
           style={styles.back}>
           <Image
             source={require('../../../assets/icons/back.png')}
-            style={{width: 27, height: 27}}
+            style={{width: 25, height: 25}}
           />
         </Pressable>
 
@@ -36,27 +37,29 @@ const Detail = ({route}) => {
           onPress={() => ToastAndroid.show('Saved Blog', ToastAndroid.SHORT)}
           style={styles.save}>
           <Image
-            source={require('../../../assets/icons/saved.png')}
-            style={{width: 30, height: 30}}
+            source={require('../../../assets/icons/save.png')}
+            style={{width: 25, height: 25, resizeMode: 'contain'}}
           />
         </Pressable>
       </View>
 
       <SafeAreaView style={styles.viewContent}>
-        <Image source={blog.thumb} style={styles.thumbnail} />
+        <ScrollView style={{width: '100%', height: '100%'}}>
+          <Image source={blog.thumb} style={styles.thumbnail} />
 
-        <View style={styles.contentContainer}>
-          <Text style={styles.title}>{blog.title}</Text>
+          <View style={styles.contentContainer}>
+            <Text style={styles.title}>{blog.title}</Text>
 
-          <View style={styles.cardHeader}>
-            <Image source={blog.avt} style={styles.imgAvt} />
-            <View style={{flexDirection: 'column', marginLeft: 8}}>
-              <Text style={styles.nameUser}>{blog.name}</Text>
-              <Text style={styles.time}>3 min read</Text>
+            <View style={styles.cardHeader}>
+              <Image source={blog.avt} style={styles.imgAvt} />
+              <View style={{flexDirection: 'column', marginLeft: 8}}>
+                <Text style={styles.nameUser}>{blog.name}</Text>
+                <Text style={styles.time}>3 min read</Text>
+              </View>
             </View>
+            <Text style={styles.content}>{`${blog.content}`}</Text>
           </View>
-          <Text style={styles.content}>{blog.content}</Text>
-        </View>
+        </ScrollView>
       </SafeAreaView>
       <View style={styles.footer}>
         <Pressable
@@ -84,17 +87,21 @@ const Detail = ({route}) => {
         <Pressable
           onPress={() => ToastAndroid.show('Share Twitter', ToastAndroid.SHORT)}
           style={styles.viewTwit}>
-          <Icon name="twitter" color={'white'} size={35} />
+          {/* <Icon name="twitter" color={'white'} size={35} /> */}
+          <Image
+            source={require('../../../assets/icons/twitter.png')}
+            style={{width: 25, height: 25}}
+          />
         </Pressable>
 
         <Pressable
           onPress={() =>
             ToastAndroid.show('Share Instagram', ToastAndroid.SHORT)
           }
-          style={styles.viewInsta}>
+          style={styles.viewLike}>
           <Image
-            source={require('../../../assets/icons/instagram.png')}
-            style={{width: 30, height: 30}}
+            source={require('../../../assets/icons/like.png')}
+            style={{width: 25, height: 25}}
           />
         </Pressable>
       </View>

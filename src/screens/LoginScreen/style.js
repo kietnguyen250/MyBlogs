@@ -12,7 +12,7 @@ export default StyleSheet.create({
     backgroundColor: COLOR.white,
   },
   title: {
-    marginTop: 10,
+    marginTop: 15,
     paddingLeft: 8,
   },
   textTitle: {

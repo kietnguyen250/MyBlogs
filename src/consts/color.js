@@ -10,6 +10,7 @@ const COLORS = {
   dark: '#000B10',
   pinterest: '#C8232C',
   Twitt: '#1DA1F2',
+  like: '#EF951C',
 };
 
 export default COLORS;
